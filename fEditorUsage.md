@@ -1,6 +1,8 @@
 # fEditor
 A vim plugin for editing .fuck plain text file
 
+[中文](https://github.com/safe049/fuck-text-format/blob/main/fEditorUsage.md#feditor-1)
+
 # Installation
 Copy fEditor.vim into vim's plugin path,eg: `/usr/share/vim/vimfiles/plugin`
 
