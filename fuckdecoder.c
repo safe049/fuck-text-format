@@ -48,12 +48,25 @@ char *decode_text(const char *binary_text) {
     }
 
     for (int i = 0; i < text_length; i++) {
-        sscanf(binary_text + 2*i, "%2hhx", (unsigned char *)&text[i]);
+        char hex[3];
+        hex[0] = binary_text[2*i];
+        hex[1] = binary_text[2*i + 1];
+        hex[2] = '\0';
+
+        if (strspn(hex, "0123456789abcdefABCDEF") != 2) {
+            printf("Decoding error: Invalid hexadecimal sequence '%s'.\n", hex);
+            free(text);
+            return NULL;
+        }
+
+        unsigned int byte = strtol(hex, NULL, 16);
+        text[i] = (char)byte;
     }
     text[text_length] = '\0';
 
     return text;
 }
+
 
 int main() {
     char filename[256];
