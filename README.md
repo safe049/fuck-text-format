@@ -1,6 +1,8 @@
 # Fuck Text Format
 A plain text format with .fuck format extension created by C Programming Language
 
+[中文](https://github.com/safe049/fuck-text-format#fuck%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F)
+
 # Installation
 - Linux:
 
