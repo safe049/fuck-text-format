@@ -22,7 +22,14 @@ sudo ./install.sh
 ```
 
 - Windows
-Will be supported soon.
+1. Install scoop
+2. Install vim
+```
+scoop install vim
+```
+3. Clone the repository
+4. Add the fuck-text-format directory to PATH
+5. Start using fuck-text-format!
 
 # Usage
 
